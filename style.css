@@ -5,7 +5,6 @@ background:#f5f7fb;
 color:#1a1a1a;
 }
 
-/* ===== TOP BANNER ===== */
 .banner{
 background:#0b5ed7;
 color:white;
@@ -15,11 +14,9 @@ font-size:13px;
 font-weight:600;
 }
 
-/* ===== HEADER ===== */
 header{
 background:white;
 border-bottom:2px solid #e0e6ef;
-position:relative;
 }
 
 .header-container{
@@ -31,7 +28,6 @@ justify-content:space-between;
 padding:10px 15px;
 }
 
-/* LEFT BRAND */
 .brand{
 display:flex;
 align-items:center;
@@ -49,13 +45,12 @@ font-weight:700;
 color:#0b5ed7;
 }
 
-/* NAV */
 nav ul{
 list-style:none;
 margin:0;
 padding:0;
 display:flex;
-gap:8px;
+gap:10px;
 }
 
 nav a{
@@ -71,7 +66,6 @@ background:#e8f0ff;
 color:#0b5ed7;
 }
 
-/* MOBILE MENU */
 .menu-toggle{
 display:none;
 font-size:22px;
@@ -79,28 +73,22 @@ cursor:pointer;
 }
 
 @media (max-width:768px){
-
-.menu-toggle{
-display:block;
-}
+.menu-toggle{display:block;}
 
 nav ul{
 display:none;
 flex-direction:column;
-background:white;
 position:absolute;
 right:10px;
 top:60px;
-padding:10px;
+background:white;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:10px;
 }
 
-nav ul.active{
-display:flex;
-}
+nav ul.active{display:flex;}
 }
 
-/* CONTENT */
 .container{
 max-width:1100px;
 margin:auto;
@@ -128,7 +116,6 @@ border-radius:10px;
 box-shadow:0 3px 8px rgba(0,0,0,0.05);
 }
 
-/* BUTTON */
 button{
 background:#0b5ed7;
 color:white;
@@ -138,11 +125,8 @@ border-radius:5px;
 cursor:pointer;
 }
 
-button:hover{
-background:#084298;
-}
+button:hover{background:#084298;}
 
-/* FORM */
 form input, form textarea, form select{
 width:100%;
 padding:10px;
@@ -151,7 +135,6 @@ border-radius:5px;
 border:1px solid #ccc;
 }
 
-/* FOOTER */
 footer{
 background:#0b1f3a;
 color:white;
@@ -165,7 +148,6 @@ padding:25px;
 text-align:center;
 }
 
-/* MODAL */
 .modal{
 display:none;
 position:fixed;
