@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Careers - RHP</title>
+<title>Careers</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="banner">
-Official Website of the Republic Highway Patrol. Official Government Websites end in republicstates.xyz
-</div>
-
-<header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="report.html">Report Incident</a>
-<a href="careers.html">Careers</a>
-<a href="contact.html">Contact</a>
-
-<a href="https://republicstates.xyz">Republic States</a>
-<a href="https://lccounty.republicstates.xyz">Lego City County</a>
-<a href="https://lccity.republicstates.xyz">Lego City</a>
-</nav>
-</header>
+<!-- SAME HEADER -->
 
 <div class="container">
 
 <h1>Careers</h1>
 
-<p>
-The Republic Highway Patrol is always seeking dedicated individuals to serve and protect the Republic States of America.
-</p>
-
-<h2>Career Opportunities</h2>
-
 <ul>
 <li>Highway Patrol Officer</li>
 <li>Federal Investigator</li>
-<li>Immigration Enforcement Officer</li>
-<li>Correctional Security Officer</li>
-<li>Administrative Staff</li>
+<li>Correctional Officer</li>
 </ul>
 
-<p>
-To apply, please contact our recruitment office or check back soon for our online application system.
-</p>
+<button onclick="openModal()">Apply Now</button>
 
 </div>
 
+<div class="modal" id="popup">
+<div class="modal-content">
+
+<h2>Applications Closed</h2>
+<p>We are not accepting applicants at this time.</p>
+
+<button onclick="closeModal()">Close</button>
+
+</div>
+</div>
+
+<script>
+function openModal(){
+document.getElementById("popup").style.display="flex";
+}
+function closeModal(){
+document.getElementById("popup").style.display="none";
+}
+</script>
+
 <footer>
-
-<p>
-<a href="https://republicstates.xyz">Republic States Government</a> |
-<a href="https://lccounty.republicstates.xyz">Lego City County</a> |
-<a href="https://lccity.republicstates.xyz">Lego City</a>
-</p>
-
+<div class="footer-container">
 <p>Official website of the Republic States Government.</p>
-
+</div>
 </footer>
 
 </body>
