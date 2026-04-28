@@ -2,11 +2,47 @@
 <html>
 <head>
 <title>Careers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- SAME HEADER -->
+<!-- FULL HEADER -->
+<div class="banner">Official Website of the Republic Highway Patrol.</div>
+
+<header>
+<div class="header-container">
+
+<div class="brand">
+<svg class="badge" viewBox="0 0 100 100">
+<polygon points="50,5 61,35 95,35 67,55 78,90 50,70 22,90 33,55 5,35 39,35"
+fill="#f5c542"/>
+</svg>
+<div class="logo">Republic Highway Patrol</div>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav>
+<ul id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="locations.html">Locations</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 <div class="container">
 
@@ -18,18 +54,15 @@
 <li>Correctional Officer</li>
 </ul>
 
-<button onclick="openModal()">Apply Now</button>
+<button onclick="openModal()">Apply</button>
 
 </div>
 
 <div class="modal" id="popup">
 <div class="modal-content">
-
 <h2>Applications Closed</h2>
 <p>We are not accepting applicants at this time.</p>
-
 <button onclick="closeModal()">Close</button>
-
 </div>
 </div>
 
@@ -42,11 +75,7 @@ document.getElementById("popup").style.display="none";
 }
 </script>
 
-<footer>
-<div class="footer-container">
-<p>Official website of the Republic States Government.</p>
-</div>
-</footer>
+<footer><div class="footer-container">Official website of the Republic States Government.</div></footer>
 
 </body>
 </html>
