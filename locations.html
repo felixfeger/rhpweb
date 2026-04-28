@@ -2,42 +2,75 @@
 <html>
 <head>
 <title>Locations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- SAME HEADER + NAV -->
+<!-- FULL HEADER -->
+<div class="banner">Official Website of the Republic Highway Patrol.</div>
+
+<header>
+<div class="header-container">
+
+<div class="brand">
+<svg class="badge" viewBox="0 0 100 100">
+<polygon points="50,5 61,35 95,35 67,55 78,90 50,70 22,90 33,55 5,35 39,35"
+fill="#f5c542"/>
+</svg>
+<div class="logo">Republic Highway Patrol</div>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav>
+<ul id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="locations.html">Locations</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 <div class="container">
 
-<h1>RHP Locations</h1>
+<h1>Locations</h1>
 
 <div class="cards">
 
 <div class="card">
 <h3>Headquarters</h3>
-<p>100 S Death Star City Dr<br>Death Star City, RS 10003</p>
+<p>100 S Death Star City Dr</p>
+<p>Death Star City, RS 10003</p>
 </div>
 
 <div class="card">
-<h3>Federal Prison Emergency Services</h3>
+<h3>Prison Emergency Services</h3>
 <p>SR1, 30 miles north of Santa Mooica</p>
 </div>
 
 <div class="card">
 <h3>Lego City Station</h3>
-<p>100 Police Rd<br>Lego City, RS 10001</p>
+<p>100 Police Rd, RS 10001</p>
 </div>
 
 </div>
 
 </div>
 
-<footer>
-<div class="footer-container">
-<p>Official website of the Republic States Government.</p>
-</div>
-</footer>
+<footer><div class="footer-container">Official website of the Republic States Government.</div></footer>
 
 </body>
 </html>
